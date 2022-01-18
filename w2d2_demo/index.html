@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="KT">
+    <meta name="description" content="W2D2 Demo">
+    <title>W2 | Demo</title>
+
+    <!--in-document styling in CSS-->
+    <style>
+        /*must write with CSS syntax in here!*/
+
+        /*SELECTING in CSS & Javascript: select specific element(s) on a page:
+            *by ELEMENT type            ex: body, div, p 
+            *by ID attribute            ex: #wrapper, #nav, #footer
+            *by CLASS attribute         ex: coming in Week 3 :]
+        */
+
+        div { /*applies to ALL divs in the page */
+
+            border:1px solid black;
+            padding:10px; /*adds 10px of space to all 4 sides inbetween content & the border*/
+            margin:5px; /*adds 5px of space to all 4 sides inbetween an element's border and its neighboring elements*/
+        }
+
+        #wrapper {/*  # specifies ID name, only applies to single element with that ID*/
+
+            background-color:white;
+
+        }
+
+        #school {
+            background-color:yellow;
+        }
+
+        #nav, #footer {
+            background-color:rgb(200, 200, 200);
+        }
+
+    </style>
+</head>
+<body style="background-color:grey;">
+    <div id="wrapper"><!--this div holds and "wraps around/together" all content on the page-->
+        <!--once an ID value has been assigned, it cannot be reused in the page-->
+
+        <h1>Katharine M. Truchon</h1>
+
+        <!--NAVIGATION-->
+        <div id="nav">
+
+            <!--linking to OUTSIDE {remote!} pages [these are NOT a part of the website, they exist somewhere else online]-->
+            <!--you need the full Uniform Resource Locator / online path-->
+            <a href="https://www.meca.edu/" target="_blank">Visit MECA</a>
+            <!--href holds the URL of website linking to-->
+            <!--target="_blank" opens the page in a new browser tab-->
+
+            <!--linking to INTERNAL {relative!} pages [these are within the site ie project root directory]-->
+            <!--usually you only need the URI if the folder is set up correctly-->
+            <a href="page2.html" target="_blank">Visit Page 2</a>
+
+            <!--IN-PAGE "jump" links: linking to a sections within the actual page itself-->
+            <a href="#bio">BIO</a>
+            <a href="#school">SCHOOLS</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#footer">Bottom of Page</a>
+
+        </div><!--/ #nav-->
+
+        <!--CONTENT / SECTIONS-->
+        <div id="bio">
+
+            <h2>About Me</h2>
+
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, unbent, unbroken. It's ten thousand miles between King's Landning and the wall.</p>
+
+            <!--img tags for image content on page-->
+            <!--REMOTE/ABSOLUTE image file paths - from somewhere online, NOT our root directory-->
+            <img src="https://www.syfy.com/sites/syfy/files/2019/05/ep01_sean_bean_04.jpeg" alt="Eddard Stark outside, holding Ice, contemplating a recent beheading" style="width:500px;">
+
+            <!--RELATIVE img path example-->
+            <img src="images/ed.jpg" alt="Eddard Stark seated on the Iron Throne" style="width:500px;">
+
+        </div><!--/ #bio-->
+
+        <div id="school">
+
+            <h2>Schooling</h2>
+
+            <ol>
+                <li>School 1</li>
+                <li>School 2</li>
+                <li>School 3</li>
+            </ol>
+
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, unbent, unbroken. It's ten thousand miles between King's Landning and the wall.</p>
+            <br>
+            <br>
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, unbent, unbroken. It's ten thousand miles between King's Landning and the wall.</p>
+            <br>
+            <br>
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, unbent, unbroken. It's ten thousand miles between King's Landning and the wall.</p>
+            <br>
+            <br>
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, unbent, unbroken. It's ten thousand miles between King's Landning and the wall.</p>
+            <br>
+            <br>
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, unbent, unbroken. It's ten thousand miles between King's Landning and the wall.</p>
+            <br>
+            <br>
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, unbent, unbroken. It's ten thousand miles between King's Landning and the wall.</p>
+            <br>
+            <br>
+
+        </div><!--/ #school-->
+
+        <div id="hobbies">
+
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Hobby 1</li>
+                <li>Hobby 2</li>
+                <li>Hobby 3</li>
+            </ul>
+
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, unbent, unbroken. It's ten thousand miles between King's Landning and the wall.</p>
+            <br>
+            <br>
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, unbent, unbroken. It's ten thousand miles between King's Landning and the wall.</p>
+            <br>
+            <br>
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, unbent, unbroken. It's ten thousand miles between King's Landning and the wall.</p>
+            <br>
+            <br>
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, unbent, unbroken. It's ten thousand miles between King's Landning and the wall.</p>
+            <br>
+            <br>
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, unbent, unbroken. It's ten thousand miles between King's Landning and the wall.</p>
+            <br>
+            <br>
+            <p>Can a man still be brave if he's afraid? That is the only time a man can be brave. A forked purple lightning bolt, on black field speckled with four-pointed stars. Winter is coming. You know nothing, Jon Snow. Pay the iron price. Unbowed, unbent, unbroken. It's ten thousand miles between King's Landning and the wall.</p>
+            <br>
+            <br>
+
+        </div><!--/ #hobbies-->
+
+        <!--FOOTER-->
+        <div id="footer"
+
+            <a href="#wrapper">Back to Top</a>
+            <a href="page2.html#footer">Page 2 Footer</a>
+
+            <p>&copy; 2022 | K TRUCHON | SE111.32</p>
+
+            <!--validation screenshot image should be added below-->
+            <img src="images/valid.PNG" style="width:100%">
+
+        </div><!--/ #footer-->
+
+    </div>
+</body>
+</html>
